@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="lecture2" type="action5.py" name="action5" />
+    <node pkg="lecture2" type="perception5.py" name="perception5"/>
+    <node pkg="lecture2" type="planning5.py" name="planning5"/>
+    <node pkg="rviz" type="rviz" name="test_show" args="-d $(find lecture2)/config/task4.rviz"/>
+</launch>
